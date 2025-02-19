@@ -11,6 +11,6 @@ class Libro {
     }
 }
 
-const miLibro = new Libro('1984', 'George Orwell', 1949);
+const miLibro = new Libro('El perfume: Historia de un asesino', 'Patrick Süskind', 1985);
 console.log(miLibro.describirLibro()); 
 
