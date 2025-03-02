@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="password-generator">
+        <div class="password-display">
+            <span id="password-output">PTx1f5DaFX</span>
+            <button onclick="copyPassword()">📋</button>
+        </div>
+        
+        <div class="options-container">
+            <div class="option-group">
+                <label>Longitud: <span id="length-value">10</span></label>
+                <input type="range" id="password-length" min="8" max="24" value="10">
+            </div>
+            
+            <div class="option-group">
+                <label><input type="checkbox" id="uppercase" checked> Mayúsculas</label>
+                <label><input type="checkbox" id="lowercase" checked> Minúsculas</label>
+                <label><input type="checkbox" id="numbers" checked> Números</label>
+                <label><input type="checkbox" id="symbols" checked> Símbolos</label>
+            </div>
+        </div>
+
+        <div class="strength-indicator">
+            <span>FORTALEZA:</span>
+            <div class="strength-bar" id="strength-bar"></div>
+            <span id="strength-text">MEDIO</span>
+        </div>
+
+        <button onclick="generatePassword()">GENERAR CONTRASEÑA</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

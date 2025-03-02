@@ -1,4 +1,4 @@
-let librosLeidos = ["EL PERFUME"]; // Array para almacenar los libros
+let librosLeidos = ["EL PERFUME","don quijote" ];// Array para almacenar los libros
 
 // Función para agregar libros
 function agregarLibro(titulo) {

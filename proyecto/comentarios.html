@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://images.pexels.com/photos/8019615/pexels-photo-8019615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="avatar" id="userAvatar">
+            <h2 id="userName"></h2>
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </header>
+
+        <div class="comment-box">
+            <textarea id="commentInput" placeholder="Escribe tu comentario..."></textarea>
+            <button onclick="publicarComentario()">Publicar</button>
+        </div>
+
+        <div id="commentsContainer"></div>
+    </div>
+    <script src="auth.js"></script>
+    <script src="comentarios.js"></script>
+</body>
+</html>

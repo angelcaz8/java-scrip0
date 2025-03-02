@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #2a2a2a;
+    --secondary-color: #4CAF50;
+    --background: #f5f5f5;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    background-color: var(--background);
+}
+
+.password-generator {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.password-display {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength-indicator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.strength-bar {
+    height: 4px;
+    width: 100px;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+.options-container {
+    margin: 1.5rem 0;
+}
+
+.option-group {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
